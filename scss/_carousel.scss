@@ -1,0 +1,78 @@
+.ps-carousel__controls {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 0 50px;
+}
+.ps-carousel__numbers {
+	font-size: 80px;
+	color: #000000;
+	font-weight: 600;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 0;
+	padding: 0.5rem;
+	bottom: 0;
+	border: 1px solid rgba(0,0,0,0.2);
+
+	li {
+		display: none;
+		width: auto;
+		height: auto;
+		text-indent: 0;
+		line-height: 1;
+
+		&:before, &:after {
+			display: none;
+		}
+
+		&.ps-carousel__numbers_count,
+		&.active {
+			display: inline-block;
+			background: transparent;
+		}
+		&.ps-carousel__numbers_count {
+			margin-top: 8px;
+		}
+	}
+}
+.ps-carousel__numbers_count {
+	font-size: 40px;
+	opacity: 0.3;
+}
+.ps-carousel__control-prev-icon {
+	width: 21px;
+	height: 26px;
+	background-image: url("img/carousel-arrow-left_black.svg");
+}
+.ps-carousel__control-next-icon {
+	width: 21px;
+	height: 26px;
+	background-image: url("img/carousel-arrow-right_black.svg");
+}
+
+
+.ps-header-carousel {
+	height: 500px;
+}
+.ps-header-carousel__controls {
+	bottom: 120px;
+	@media (max-width: 991px) {
+		bottom: 30px;
+	}
+}
+.ps-header-carousel__numbers {
+	color: #ffffff;
+	border: 1px solid rgba(255,255,255,0.2);
+}
+.ps-header-carousel__control-prev-icon {
+	width: 21px;
+	height: 26px;
+	background-image: url("img/carousel-arrow-left.svg");
+}
+.ps-header-carousel__control-next-icon {
+	width: 21px;
+	height: 26px;
+	background-image: url("img/carousel-arrow-right.svg");
+}
